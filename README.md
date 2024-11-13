@@ -35,7 +35,11 @@ cd RTMPS-docker
 
 ### 3. Configure the server
 
-- Set your keys in the keys.txt file.
+- Set your keys in the keys.txt file. To generate keys, you can use the following command:
+```bash
+python3 -c "import secrets; [print(secrets.token_urlsafe(32)) for _ in range(10)]" >> keys.txt
+```
+
 - Set allowed IP addresses to play the stream in the ips.txt file.
 - Set your SSL certificate in the ssl directory.
 
