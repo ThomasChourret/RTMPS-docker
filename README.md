@@ -36,6 +36,7 @@ cd RTMPS-docker
 ### 3. Configure the server
 
 - Set your keys in the keys.txt file.
+- Set allowed IP addresses to play the stream in the ips.txt file.
 - Set your SSL certificate in the ssl directory.
 
 ```bash

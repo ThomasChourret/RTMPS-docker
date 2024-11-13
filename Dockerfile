@@ -48,6 +48,13 @@ COPY auth.php /auth/auth.php
 # copy keys.txt file
 COPY keys.txt /auth/keys.txt
 
+# copy ip play list
+COPY ips.txt /auth/ips.txt
+
+#copy PHP ip file
+COPY play_auth.php /auth/playauth.php
+
+
 #COPY allowed_keys.txt /etc/nginx/conf.d/allowed_keys.txt
 #COPY whitelist_ips.txt /etc/nginx/conf.d/whitelist_ips.txt
 #COPY generate_ips.sh /usr/local/bin/generate_ips.sh
